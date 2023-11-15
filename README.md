@@ -12,18 +12,18 @@ Root And LSPosed Settings for Sony Xperia 10 V Stock Rom (It Can Work On Other D
 
 # Extra Features Not Available On The App
 1) Increase Or Decrease Volume Steps
-1.1)Instructions = (Requires MagiskHidePropsConf Magisk Module) (adb shell su -c "props ro.config.media_vol_steps 50") Replace 50 With The Number Of Your Choosing
+1.1) Instructions = (Requires MagiskHidePropsConf Magisk Module) (adb shell su -c "props ro.config.media_vol_steps 50") Replace 50 With The Number Of Your Choosing
 2) Enable Auto-Rotation On Lock Screen
-2.1)Instructions = (Requires MagiskHidePropsConf Magisk Module) (adb shell su -c "props lockscreen.rot_override true")
+2.1) Instructions = (Requires MagiskHidePropsConf Magisk Module) (adb shell su -c "props lockscreen.rot_override true")
 
 Remove MagiskHidePropsConf Module To Disable These Two Options
 
 # How To Install
-1)Every Feature That Does Not Need LSPosed Will Work Out Of The Box With Root If You Want Features That Include LSPosed Then Follow The Following Steps
-2)In LSPosed Enable (System Framework) And (SystemUI)
-3)SystemUI Will Not Be Visible On LSPosed To Enable It Click The 3 Dots On The Top Right Corner
-4)Then Click (Hide) And Disable (System Apps)
-5)After That Find (SystemUI) And Enable Both (SystemUI) And (System Framework)
+1) Every Feature That Does Not Need LSPosed Will Work Out Of The Box With Root If You Want Features That Include LSPosed Then Follow The Following Steps
+2) In LSPosed Enable (System Framework) And (SystemUI)
+3) SystemUI Will Not Be Visible On LSPosed To Enable It Click The 3 Dots On The Top Right Corner
+4) Then Click (Hide) And Disable (System Apps)
+5) After That Find (SystemUI) And Enable Both (SystemUI) And (System Framework)
 
 ![Untitled-2](https://github.com/alkisqwe/XperiaSettings/assets/73914940/10da0c79-e8fb-4304-92b0-af9d104d9167)
 
