@@ -12,9 +12,9 @@ Root And LSPosed Settings for Sony Xperia 10 V Stock Rom (It Can Work On Other D
 
 # Extra Features Not Available On The App
 1) Increase Or Decrease Volume Steps
-1.1) Instructions = (Requires MagiskHidePropsConf Magisk Module) (adb shell su -c "props ro.config.media_vol_steps 50") Replace 50 With The Number Of Your Choosing
+Instructions = (Requires MagiskHidePropsConf Magisk Module) (adb shell su -c "props ro.config.media_vol_steps 50") Replace 50 With The Number Of Your Choosing
 2) Enable Auto-Rotation On Lock Screen
-2.1) Instructions = (Requires MagiskHidePropsConf Magisk Module) (adb shell su -c "props lockscreen.rot_override true")
+Instructions = (Requires MagiskHidePropsConf Magisk Module) (adb shell su -c "props lockscreen.rot_override true")
 
 Remove MagiskHidePropsConf Module To Disable These Two Options
 
