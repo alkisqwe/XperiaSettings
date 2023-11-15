@@ -27,3 +27,5 @@ Remove MagiskHidePropsConf Module To Disable These Two Options
 
 ![Untitled-2](https://github.com/alkisqwe/XperiaSettings/assets/73914940/10da0c79-e8fb-4304-92b0-af9d104d9167)
 
+# Include
+I Am Not Responsible For Bricked Devices You Are Using This SoftWare At Your Own Risk
