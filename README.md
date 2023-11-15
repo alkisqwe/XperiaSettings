@@ -16,7 +16,7 @@ Root And LSPosed Settings for Sony Xperia 10 V Stock Rom (It Can Work On Other D
 3) Enable Auto-Rotation On Lock Screen
 4) Instructions = (Requires MagiskHidePropsConf Magisk Module) (adb shell su -c "props lockscreen.rot_override true")
 
-5) Remove MagiskHidePropsConf Module To Disable These Two Options
+   Remove MagiskHidePropsConf Module To Disable These Two Options
 
 # How To Install
 1) Every Feature That Does Not Need LSPosed Will Work Out Of The Box With Root If You Want Features That Include LSPosed Then Follow The Following Steps
