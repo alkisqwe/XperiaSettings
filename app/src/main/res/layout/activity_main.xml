@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/system_accent1_300"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Switch
+                android:id="@+id/reversepotraitswitch"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#00CCFF"
+                android:gravity="center_vertical"
+                android:text="   Reverse Potrait (Root)" />
+
+            <Switch
+                android:id="@+id/secondsswitch"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#00CCFF"
+                android:gravity="center_vertical"
+                android:text="   Seconds In Clock (Root)" />
+
+            <Switch
+                android:id="@+id/screenalwaysonswitch"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#00CCFF"
+                android:gravity="center_vertical"
+                android:text="   Screen Timeout Remover (Root)" />
+
+            <Switch
+                android:id="@+id/resolutionswitch"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#00CCFF"
+                android:gravity="center_vertical"
+                android:text="   Enable 4k Resolution (Root)" />
+
+            <Switch
+                android:id="@+id/swapswitch"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#00CCFF"
+                android:gravity="center_vertical"
+                android:text="   Swap Navigation Buttons (Recent-Back) (LSPosed)" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
