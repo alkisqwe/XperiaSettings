@@ -14,6 +14,7 @@ Root And LSPosed Settings for Sony Xperia 10 V Stock Rom (It Can Work On Other D
 7) Voice Assist Home Button Long Press = Change Voice Assist For Home Button Long Press To One Of The Assist Options
 8) Voice Assist Power Button Long Press = Change Voice Assist For Power Button Long Press To One Of The Assist Options
 9) Voice Assist Any Button = Change Voice Assist For All Else To One Of The Assist Options
+(Warning) Sometimes After Reboot Voice Assist Doesn't Work. Set Digital Assistant To None Then XperiaSettings Again To Fix
 
 # Assist Options
 1) Open Application
