@@ -1,62 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@android:color/system_accent1_300"
-    android:orientation="vertical"
-    tools:context=".SettingsActivity">
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:paddingLeft="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:divider="?android:dividerVertical"
+            android:orientation="vertical"
+            android:showDividers="middle">
 
-            <Switch
-                android:id="@+id/reversepotraitswitch"
+            <LinearLayout
+                android:id="@+id/statusbar"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#00CCFF"
-                android:gravity="center_vertical"
-                android:text="   Reverse Potrait (Root)" />
+                android:background="@drawable/button"
+                android:orientation="vertical">
 
-            <Switch
-                android:id="@+id/secondsswitch"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="Statusbar tweaks"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:text="Contains various statusbar tweaks"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/display"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#00CCFF"
-                android:gravity="center_vertical"
-                android:text="   Seconds In Clock (Root)" />
+                android:background="@drawable/button"
+                android:orientation="vertical">
 
-            <Switch
-                android:id="@+id/screenalwaysonswitch"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="Display tweaks"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:text="Contains various display tweaks"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttons"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#00CCFF"
-                android:gravity="center_vertical"
-                android:text="   Screen Timeout Remover (Root)" />
+                android:background="@drawable/button"
+                android:orientation="vertical">
 
-            <Switch
-                android:id="@+id/resolutionswitch"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:background="#00CCFF"
-                android:gravity="center_vertical"
-                android:text="   Enable 4k Resolution (Root)" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="Buttons tweaks"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
 
-            <Switch
-                android:id="@+id/swapswitch"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:background="#00CCFF"
-                android:gravity="center_vertical"
-                android:text="   Swap Navigation Buttons (Recent-Back) (LSPosed)" />
-
+                <TextView
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:text="Contains various buttons tweaks"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

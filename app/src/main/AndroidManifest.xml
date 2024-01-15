@@ -3,6 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,7 +18,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
-        tools:targetApi="31">
+        tools:targetApi="23">
 
         <activity
             android:name=".MainActivity"
@@ -22,7 +29,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.buttons"
+            android:label="Buttons Tweaks">
+        </activity>
+        <activity
+            android:name=".ui.display"
+            android:label="Display Tweaks">
 
+        </activity>
+        <activity
+            android:name=".ui.statusbar"
+            android:label="Statusbar Tweaks">
+        </activity>
+        <service
+            android:name=".voiceassist.assistloggerservice"
+            android:permission="android.permission.BIND_VOICE_INTERACTION">
+            <meta-data
+                android:name="android.voice_interaction"
+                android:resource="@xml/assist_service"/>
+            <intent-filter>
+                <action android:name="android.service.voice.VoiceInteractionService"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".voiceassist.assistloggersessionservice"
+            android:permission="android.permission.BIND_VOICE_INTERACTION"/>
         <meta-data
             android:name="xposedmodule"
             android:value="true" />

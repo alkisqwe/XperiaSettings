@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:showDividers="middle"
+            android:divider="?android:dividerVertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/reversepotraitswitchlayout"
+                android:background="@drawable/button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="Reverse Potrait (Root)"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:text="Screen Orientation Becomes Reverse Potrait\nUntil Changed"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/reversepotraitswitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/allwaylayout"
+                android:background="@drawable/button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="All Way Rotation (LSPosed)"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:text="Enable 4-Way Rotation On Device\nWarning Application Rotation (Youtube Full Screen)\nDoesnt Work Properly If Auto Rotation Is Turned Off"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/allway"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screenalwaysonswitchlayout"
+                android:background="@drawable/button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="Screen Timeout Remover (Root)"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:text="Set Screen Timeout To 166 Hours"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/screenalwaysonswitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resolutionswitchlayout"
+                android:background="@drawable/button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="Enable 4k Resolution (Root)"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:text="Increase Resolution Of Device\nFrom 1080x2520 To 1644x3840"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/resolutionswitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -24,6 +24,7 @@ public class MyModule implements IXposedHookInitPackageResources, IXposedHookLoa
 {
     public String HOOK_PACKAGE = "com.android.systemui";
     public boolean swapbuttons = false;
+    public boolean allway = false;
 
     private static XSharedPreferences getPref(String path)
     {
@@ -59,8 +60,46 @@ public class MyModule implements IXposedHookInitPackageResources, IXposedHookLoa
     }
 
     @Override
-    public void handleLoadPackage(XC_LoadPackage.LoadPackageParam lpparam) throws Throwable
-    {
+    public void handleLoadPackage(XC_LoadPackage.LoadPackageParam lpparam) throws Throwable {
+        try
+        {
+            XSharedPreferences pref;
+            pref = getPref("my");
+            if (pref != null) {
+                allway = pref.getBoolean("allway", false);
+            }
+            if (allway) {
+                XposedBridge.hookAllMethods(XposedHelpers.findClass("com.android.server.wm.DisplayRotation", lpparam.classLoader), "rotationForOrientation", new XC_MethodHook() {
+                    @Override
+                    protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+                        super.beforeHookedMethod(param);
+                        try {
+                            int lastRotation = ((Integer) param.args[1]).intValue();
+                            if (XposedHelpers.getIntField(param.thisObject, "mUserRotationMode") == 1) {
+                                param.setResult(Integer.valueOf(lastRotation));
+                                return;
+                            }
+                            int sensorRotation;
+                            Object mOrientationListener = XposedHelpers.getObjectField(param.thisObject, "mOrientationListener");
+                            if (mOrientationListener != null) {
+                                sensorRotation = ((Integer) XposedHelpers.callMethod(mOrientationListener, "getProposedRotation", new Object[0])).intValue();
+                            } else {
+                                sensorRotation = -1;
+                            }
+                            if (sensorRotation < 0) {
+                                sensorRotation = lastRotation;
+                            }
+                            param.setResult(Integer.valueOf(sensorRotation));
+                        } catch (Exception e) {
 
+                        }
+                    }
+                });
+            }
+        }
+        catch (Exception e)
+        {
+
+        }
     }
 }
