@@ -9,7 +9,7 @@ Root And LSPosed Settings for Sony Xperia 10 V Stock Rom (It Can Work On Other D
 3) Screen Timeout Remover (Root) = It Doesn't Really Remove It As It Increases It At 166 Hours
 4) Seconds In Clock (Root) = Only Effecting The StatusBar Clock
 5) Reverse Potrait (Root) = Enables Reverse Potrait But Not On Auto-Rotation
-6) Enable 4-Way Rotation (LSPosed) = Enables 4-Way Auto-Rotation (Warning Application Rotation (e.g. Youtube Full Screen) Doesnt Work Properly If Auto Rotation Is Turned Off
+6) Enable 4-Way Rotation (LSPosed) = Enables 4-Way Auto-Rotation (Warning Application Rotation (e.g. Youtube Full Screen) Doesnt Work Properly If Auto Rotation Is Turned Off)
 7) Voice Assist Home Button Long Press = Change Voice Assist For Home Button Long Press To One Of The Assist Options
 8) Voice Assist Power Button Long Press = Change Voice Assist For Power Button Long Press To One Of The Assist Options
 9) Voice Assist Any Button = Change Voice Assist For All Else To One Of The Assist Options
