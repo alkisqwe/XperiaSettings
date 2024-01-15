@@ -1,7 +1,8 @@
 # XperiaSettings
 Root And LSPosed Settings for Sony Xperia 10 V Stock Rom (It Can Work On Other Devices Theoretically But Be Carefull For Bootloop)
 
-![Untitled-3](https://github.com/alkisqwe/XperiaSettings/assets/73914940/db62c67a-3a17-46c8-b0ae-5c01cc70f88c)
+![Untitled-3second](https://github.com/alkisqwe/XperiaSettings/assets/73914940/8a84cd6e-ed91-4299-bead-6f9d9715f0ef)
+
 
 # Features
 1) Swap Navigation Buttons (Recent-Back) (LSPosed) = Requires Reboot
